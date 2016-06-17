@@ -1,0 +1,129 @@
+Scrips para generar y cargar datos en las tablas mediante sqlite
+
+
+//Tabla miRNA_targets 
+create table miRNA_targets (feature1_id integer, feature2_id integer, weight float); 
+.schema mirna_targets
+.separator "\t"
+.import edge.miRNA_targets.tbl.txt
+.import edge.miRNA_targets.tbl.txt miRNA_targets 
+
+
+//Tabla ChIP_chip
+create table ChIP_chip (feature1_id integer , feature2_id integer , weight float );
+.schema ChIP_chip
+.separator "\t";
+.import edge.ChIP_chip.tbl.txt
+.import edge.ChIP_chip.tbl.txt ChIP_chip 
+
+
+//Tabla GoldStd_TF
+create table GoldStd_TF ( feature1_id integer , feature2_id integer , sym_value float );
+.schema GoldStd_TF
+.separator "\t";
+.import edge.GoldStd_TF.tbl.txt
+.import edge.GoldStd_TF.tbl.txt GoldStd_TF 
+
+
+//Tabla L2_to_L3_april08
+create table L2_to_L3_april08 ( feature1_id integer , feature2_id integer );
+.schema L2_to_L3_april08
+.separator "\t";
+.import edge.L2_to_L3_april08.tbl.txt
+.import edge.L2_to_L3_april08.tbl.txt L2_to_L3_april08
+
+
+//Tabla L3_promoter_Entrez_08May16_EvN
+create table L3_promoter_Entrez_08May16_EvN ( feature1_id integer , feature2_id integer );
+.schema L3_promoter_Entrez_08May16_EvN
+.separator "\t";
+.import edge.L3_promoter_Entrez_08May16_EvN.tbl.txt
+.import edge.L3_promoter_Entrez_08May16_EvN.tbl.txt L3_promoter_Entrez_08May16_EvN
+
+
+//Tabla miRNA_pre2mature
+create table miRNA_pre2mature ( feature1_id integer , feature2_id integer );
+.schema L3_promoter_Entrez_08May16_EvN
+.separator "\t";
+.import edge.miRNA_pre2mature.tbl.txt
+.import edge.miRNA_pre2mature.tbl.txt miRNA_pre2mature
+
+
+//Tabla pre_miRNA_perturbation
+create table pre_miRNA_perturbation ( feature1_id integer , feature2_id integer , weight double );
+.schema pre-miRNA_perturbation
+.separator "\t";
+.import edge.pre-miRNA_perturbation.tbl.txt
+.import edge.pre-miRNA_perturbation.tbl.txt pre_miRNA_perturbation
+
+
+//Tabla PubmedID
+create table PubmedID ( feature1_id integer , feature2_id integer , weight integer , sym_value integer );
+.schema PubmedID
+.separator "\t";
+.import edge.public_ChIP_chip.tbl.txt
+.import edge.public_ChIP_chip.tbl.txt PubmedID
+
+
+//Tabla siRNA_perturbation
+create table siRNA_perturbation ( feature1_id integer , feature2_id integer , weight double );
+.schema siRNA_perturbation
+.separator "\t";
+.import edge.siRNA_perturbation.tbl.txt
+.import edge.siRNA_perturbation.tbl.txt siRNA_perturbation
+
+
+//Tabla TFmatrix_L2_may08
+create table TFmatrix_L2_may08 ( feature1_id integer , feature2_id integer , weight1 double , weight2 double );
+.schema TFmatrix_L2_may08
+.separator "\t";
+.import edge2hop.Entrez_TFmatrix_L2_may08.tbl.txt
+.import edge2hop.Entrez_TFmatrix_L2_may08.tbl.txt TFmatrix_L2_may08
+
+
+//Tabla CAGE_L1_promoter
+create table CAGE_L1_promoter ( feature_id integer , primary_name varchar );
+.schema CAGE_L1_promoter
+.separator "\t";
+.import feature.CAGE_L1_promoter.tbl.txt
+.import feature.CAGE_L1_promoter.tbl.txt CAGE_L1_promoter
+
+
+//Tabla CAGE_L2_promoter_april2008
+create table CAGE_L2_promoter_april2008 ( feature_id integer , primary_name varchar );
+.schema CAGE_L2_promoter_april2008
+.separator "\t";
+.import feature.CAGE_L2_promoter.tbl.txt
+.import feature.CAGE_L2_promoter.tbl.txt CAGE_L2_promoter_april2008
+
+
+//Tabla CAGE_L3_promoter_april2008
+create table CAGE_L3_promoter_april2008 ( feature_id integer , primary_name varchar );
+.schema CAGE_L3_promoter_april2008
+.separator "\t";
+.import feature.CAGE_L3_promoter.tbl.txt
+.import feature.CAGE_L3_promoter.tbl.txt CAGE_L3_promoter_april2008
+
+
+//Tabla Entrez_gene
+create table Entrez_gene ( feature_id integer ,	primary_name varchar , sym_value integer ) ;
+.schema Entrez_gene
+.separator "\t";
+.import feature.entrez_gene.tbl.txt
+.import feature.entrez_gene.tbl.txt Entrez_gene
+
+
+//Tabla miRBase_mature
+create table miRBase_mature ( feature_id integer ,	primary_name varchar , sym_value varchar ) ;
+.schema miRBase_mature
+.separator "\t";
+.import feature.miRBase_mature.tbl.txt
+.import feature.miRBase_mature.tbl.txt miRBase_mature
+
+
+//Tabla miRBase_pre
+create table miRBase_pre ( feature_id integer ,	primary_name varchar , sym_value varchar ) ;
+.schema miRBase_pre
+.separator "\t";
+.import feature.miRBase_pre.tbl.txt
+.import feature.miRBase_pre.tbl.txt miRBase_pre
