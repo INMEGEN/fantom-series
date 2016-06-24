@@ -1,0 +1,16 @@
+wget http://fantom.gsc.riken.jp/4/download/Tables/human/eeDB_export/edge.ChIP_chip.tbl.txt.gz
+wget http://fantom.gsc.riken.jp/4/download/Tables/human/eeDB_export/edge.GoldStd_TF.tbl.txt.gz
+wget http://fantom.gsc.riken.jp/4/download/Tables/human/eeDB_export/edge.L2_to_L3_april08.tbl.txt.gz
+wget http://fantom.gsc.riken.jp/4/download/Tables/human/eeDB_export/edge.L3_promoter_Entrez_08May16_EvN.tbl.txt.gz
+wget http://fantom.gsc.riken.jp/4/download/Tables/human/eeDB_export/edge.miRNA_pre2mature.tbl.txt.gz
+wget http://fantom.gsc.riken.jp/4/download/Tables/human/eeDB_export/edge.miRNA_targets.tbl.txt.gz
+wget http://fantom.gsc.riken.jp/4/download/Tables/human/eeDB_export/edge.pre-miRNA_perturbation.tbl.txt.gz
+wget http://fantom.gsc.riken.jp/4/download/Tables/human/eeDB_export/edge.public_ChIP_chip.tbl.txt.gz
+wget http://fantom.gsc.riken.jp/4/download/Tables/human/eeDB_export/edge.siRNA_perturbation.tbl.txt.gz
+wget http://fantom.gsc.riken.jp/4/download/Tables/human/eeDB_export/edge2hop.Entrez_TFmatrix_L2_may08.tbl.txt.gz
+wget http://fantom.gsc.riken.jp/4/download/Tables/human/eeDB_export/feature.CAGE_L1_promoter.tbl.txt.gz
+wget http://fantom.gsc.riken.jp/4/download/Tables/human/eeDB_export/feature.CAGE_L2_promoter.tbl.txt.gz
+wget http://fantom.gsc.riken.jp/4/download/Tables/human/eeDB_export/feature.CAGE_L3_promoter.tbl.txt.gz
+wget http://fantom.gsc.riken.jp/4/download/Tables/human/eeDB_export/feature.entrez_gene.tbl.txt.gz
+wget http://fantom.gsc.riken.jp/4/download/Tables/human/eeDB_export/feature.miRBase_mature.tbl.txt.gz
+wget http://fantom.gsc.riken.jp/4/download/Tables/human/eeDB_export/feature.miRBase_pre.tbl.txt.gz
