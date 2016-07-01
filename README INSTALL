@@ -1,0 +1,8 @@
+README INSTALL
+Instrucciones para crear base de datos de fantom4
+1.- Primero de debe de utilizar los comando que se encuentran el documento descargas.sh 
+2.- Ejecuta el archivo descargas.sh para bajar los datos que se encuentran en la carpeta de eeDB de fantom4
+3.- Descomprimirlos en una carpeta donde se creara la base de dato.
+4.- Ingresamos los comandos para crear las tablas y su estructura, que se encuentra en el archivo creacion_de_tablas.sql
+5.- Ingresamos los comandos para cargar los datos a las tablas que se encuentran en el archivo cargado_de_datos
+6.- Ejecutar comando para generar una consulta que se encuentra en interaccion_Gen_miRNA.sql
